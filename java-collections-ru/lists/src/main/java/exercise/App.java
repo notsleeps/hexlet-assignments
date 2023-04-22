@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 // BEGIN
-public static boolean scrabble(String symbols, String word) {
+class App {
+    public static boolean scrabble(String symbols, String word) {
         boolean answer = true;
         symbols = symbols.toLowerCase();
         word = word.toLowerCase();
@@ -24,4 +25,5 @@ public static boolean scrabble(String symbols, String word) {
         }
         return answer;
     }
+}
 //END
