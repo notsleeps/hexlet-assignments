@@ -1,12 +1,11 @@
 package exercise;
 
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
 // BEGIN
 class App {
-    public static boolean scrabble(String symbols, String word) {
+ public static boolean scrabble(String symbols, String word) {
         boolean answer = true;
         symbols = symbols.toLowerCase();
         word = word.toLowerCase();
@@ -16,11 +15,12 @@ class App {
         for (char ch : charSymbols) {
             symbolList.add(ch);
         }
-        for (int i = 0; i < charWord.length-1; i++) {
+        for (int i = 0; i < charWord.length - 1; i++) {
             if (symbolList.contains(charWord[i])) {
                 symbolList.remove(i);
             } else {
                 answer = false;
+                break;
             }
         }
         return answer;
