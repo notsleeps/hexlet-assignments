@@ -1,11 +1,12 @@
 package exercise;
 
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
 // BEGIN
-class App {
- public static boolean scrabble(String symbols, String word) {
+public class App {
+    public static boolean scrabble(String symbols, String word) {
         boolean answer = true;
         symbols = symbols.toLowerCase();
         word = word.toLowerCase();
