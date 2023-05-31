@@ -1,6 +1,7 @@
 package exercise;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 // BEGIN
 public class App {
@@ -26,6 +27,6 @@ public class App {
         }
         sb.append("}");
         return sb.toString();
-        }
-        }
+    }
+}
 //END
